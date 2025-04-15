@@ -2,7 +2,19 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+First,go the folder location and type cmd in the file location bar at the top, then click ENTER.
+
+![image](https://github.com/user-attachments/assets/2187e2e1-d2d9-4e0a-b53f-09d6c8710b98)
+
+It should open the command prompt with the folder location.
+
+Please do the following:
+
+```bash
+npm intall
+```
+
+Next, run the development server:
 
 ```bash
 npm run dev
@@ -14,11 +26,18 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Next, open http://localhost:3000 with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+To use the page in a mobile format and have access to swipe features please do the following:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Right click the page and select INSPECT or INPSPECT ELEMENT depending on your browser and select the below button.
+
+![image](https://github.com/user-attachments/assets/75482bbe-1bf8-4a4f-b04d-5bfc12eb484a)
+
+You can start editing the page by modifying src/app/page.js. The page auto-updates as you edit the file.
+
+This project uses next/font to automatically optimize and load Geist, a new font family for Vercel.
+
 
 ## Learn More
 
