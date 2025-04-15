@@ -1,0 +1,269 @@
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    height: 100%;
+  }
+  
+  .fixedTop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 95%;
+    z-index: 10; 
+    background-color: black; 
+    padding: 10px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+ /* Search Bar Styles */
+.searchContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.searchContainer input {
+  width: 70%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #222;
+  color: white;
+}
+
+.searchContainer select {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #222;
+  color: white;
+  border: 1px solid #444;
+}
+
+.searchContainer select:focus,
+.searchContainer input:focus {
+  outline: none;
+  border-color: #555;
+}
+
+#clear-btn {
+  padding: 8px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #444;
+  color: white;
+}
+
+#clear-btn:hover {
+  background-color: #555;
+}
+
+  
+  .tasksContainer {
+    margin-top: 20px;
+    height: 80%;
+  }
+  
+  .calendar-bar {
+    background-color: white;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 40px;
+    cursor: pointer;
+    width: 85%;
+    transition: background 0.1s ease-in-out;
+  }
+  
+  .calendar-bar:hover,
+  .calendar-bar:focus-within {
+    background-color: white;
+  }
+  
+  .calendar-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .calendar-label span {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .calendar-label p {
+    padding-top: 5px;
+    font-size: 15px;
+    color: #666;
+    margin: 0;
+  }
+  
+  .task-list {
+    background-color: white;
+    width: 95%;
+    color: black;
+    margin: 0 auto;
+    border-radius: 0 0 5px 5px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    padding: 0;
+  }
+  
+  .calendar-bar:hover .task-list,
+  .calendar-bar:focus-within .task-list {
+    max-height: 150px;
+    opacity: 1;
+    padding: 8px 0;
+  }
+  
+  .task-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .task-list li {
+    padding: 4px 0;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+  }
+  
+  .overdue {
+    background-color: #ffd6d6;
+    border: 2px solid #ff0000;
+  }
+  
+  .overdue .task-list {
+    background-color: #ffd6d6;
+  }
+  
+  .calendar {
+    height: 100%;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  #calendar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .popup {
+    position: relative;
+    background: #333;
+    width: 70%;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-top: 5px;
+    text-align: left;
+    display: none; /* Hides the popup by default */
+  }
+  
+  .popup.active {
+    display: block;
+  }
+  
+  
+  .popup ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .popup li {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .popup li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .popup li:hover {
+    background: #444;
+  }
+
+  .Home_container__d256j {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    height: 100%;
+    margin-top: 50px;
+}
+
+.search-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap; /* keep it inline */
+  gap: 10px;
+  margin-bottom: 10px;
+  padding: 0 1rem;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+#search-bar,
+#priority-filter,
+#status-filter {
+  font-size: 13px;
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #222;
+  color: white;
+  max-width: 100%;
+}
+
+#search-bar {
+  width: 200px;
+}
+
+#priority-filter,
+#status-filter {
+  width: 130px;
+}
+
+@media (max-width: 500px) {
+  .search-controls {
+    gap: 6px;
+    padding: 0 0.5rem;
+  }
+
+  #search-bar {
+    width: 160px;
+    font-size: 12px;
+  }
+
+  #priority-filter,
+  #status-filter {
+    width: 110px;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,76 @@
+
+
+  
+  .fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 95%;
+    z-index: 10;
+    background-color: #111; /* Darker background */
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    height: 100%;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Completed Tasks Specific Styles */
+  .tasks-container {
+    margin-top: 20px;
+    height: 80%;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+  }
+  
+  .taskItem
+ {
+    background-color: #222; /* Dark background for list items */
+    padding: 15px;
+    margin: 10px auto;
+    width: 95%;
+    border: 1px solid #444;
+    border-radius: 5px;
+    text-align: left;
+    transition: background 0.3s ease;
+  }
+  
+  .taskItem
+:hover {
+    background-color: #333;
+  }
+  
+  .taskItem
+ a {
+    color: #55ff55; /* Bright green accent for completed tasks */
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+  }
+  
+  .taskItem
+ a:hover {
+    text-decoration: underline;
+  }
+  
+  #completed-task-list li {
+      display: block;
+      text-align: left;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-bottom: 30px;
+  }
+  
+  #completed-task-list {
+      padding: 0;
+  }
+  

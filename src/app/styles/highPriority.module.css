@@ -1,0 +1,58 @@
+/* highPriority.module.css */
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    height: 100%;
+    touch-action: pan-y; 
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .tasksContainer {
+    margin-top: 20px;
+    height: 80%;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+  }
+  
+  .taskItem {
+    background-color: #222;
+    padding: 15px;
+    margin: 10px auto;
+    width: 95%;
+    border: 1px solid #444;
+    border-radius: 5px;
+    text-align: left;
+    transition: background 0.3s ease;
+  }
+  
+  .taskItem:hover {
+    background-color: #333;
+  }
+  
+  .taskItem a {
+    color: #ff5555;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+  }
+  
+  .taskItem a:hover {
+    text-decoration: underline;
+  }
+  
+  .taskList li {
+    display: block;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .taskList {
+    padding: 0;
+  }
